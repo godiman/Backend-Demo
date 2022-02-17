@@ -41,7 +41,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 
 app.get('/users', (req, res) => {
-    res.send(user);
+    res.send('This return all the users in the database', user);
 });
 
 app.get('/user', (req, res) => {
